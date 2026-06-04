@@ -1,11 +1,10 @@
+import 'package:craftora_app/core/constants/app_images.dart';
+import 'package:craftora_app/core/constants/app_strings.dart';
+import 'package:craftora_app/core/theme/app_dimensions.dart';
+import 'package:craftora_app/core/theme/app_text_theme.dart';
+import 'package:craftora_app/features/home/widgets/category_card.dart';
 import 'package:flutter/material.dart';
-import '../../core/constants/app_colors.dart';
-import '../../core/constants/app_images.dart';
-import '../../core/constants/app_strings.dart';
-import '../../core/theme/app_dimensions.dart';
-import '../../core/theme/app_text_theme.dart';
 import '../models/category_model.dart';
-import 'category_card.dart';
 
 class CategoriesSection extends StatelessWidget {
   const CategoriesSection({super.key});
@@ -67,10 +66,7 @@ class CategoriesSection extends StatelessWidget {
             separatorBuilder: (_, __) =>
                 const SizedBox(width: AppDimensions.spaceLG),
             itemBuilder: (context, index) {
-              return CategoryCard(
-                category: _categories[index],
-                onTap: () {},
-              );
+              return CategoryCard(category: _categories[index], onTap: () {});
             },
           ),
         ),
