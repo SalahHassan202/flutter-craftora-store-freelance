@@ -1,8 +1,8 @@
+import 'package:craftora_app/core/constants/app_colors.dart';
+import 'package:craftora_app/core/constants/app_strings.dart';
+import 'package:craftora_app/core/theme/app_dimensions.dart';
+import 'package:craftora_app/core/theme/app_text_theme.dart';
 import 'package:flutter/material.dart';
-import '../../core/constants/app_colors.dart';
-import '../../core/constants/app_strings.dart';
-import '../../core/theme/app_dimensions.dart';
-import '../../core/theme/app_text_theme.dart';
 
 class SearchBarWidget extends StatelessWidget {
   const SearchBarWidget({super.key});

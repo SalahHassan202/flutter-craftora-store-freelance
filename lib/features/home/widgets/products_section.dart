@@ -1,8 +1,8 @@
+import 'package:craftora_app/core/constants/app_images.dart';
+import 'package:craftora_app/core/constants/app_strings.dart';
+import 'package:craftora_app/core/theme/app_dimensions.dart';
+import 'package:craftora_app/core/theme/app_text_theme.dart';
 import 'package:flutter/material.dart';
-import '../../core/constants/app_images.dart';
-import '../../core/constants/app_strings.dart';
-import '../../core/theme/app_dimensions.dart';
-import '../../core/theme/app_text_theme.dart';
 import '../models/product_model.dart';
 import 'product_card.dart';
 
@@ -77,10 +77,7 @@ class ProductsSection extends StatelessWidget {
             separatorBuilder: (_, __) =>
                 const SizedBox(width: AppDimensions.spaceLG),
             itemBuilder: (context, index) {
-              return ProductCard(
-                product: list[index],
-                onTap: () {},
-              );
+              return ProductCard(product: list[index], onTap: () {});
             },
           ),
         ),

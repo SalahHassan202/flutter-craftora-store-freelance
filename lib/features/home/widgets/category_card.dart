@@ -1,20 +1,16 @@
+import 'package:craftora_app/core/constants/app_colors.dart';
+import 'package:craftora_app/core/theme/app_dimensions.dart';
+import 'package:craftora_app/core/theme/app_text_theme.dart';
+import 'package:craftora_app/core/utils/responsive_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import '../../core/constants/app_colors.dart';
-import '../../core/theme/app_dimensions.dart';
-import '../../core/theme/app_text_theme.dart';
-import '../../core/utils/responsive_utils.dart';
 import '../models/category_model.dart';
 
 class CategoryCard extends StatelessWidget {
   final CategoryModel category;
   final VoidCallback? onTap;
 
-  const CategoryCard({
-    super.key,
-    required this.category,
-    this.onTap,
-  });
+  const CategoryCard({super.key, required this.category, this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -47,9 +43,8 @@ class CategoryCard extends StatelessWidget {
                     width: cardSize,
                     height: cardSize,
                     fit: BoxFit.cover,
-                    placeholder: (context, url) => Container(
-                      color: AppColors.accentLight,
-                    ),
+                    placeholder: (context, url) =>
+                        Container(color: AppColors.accentLight),
                     errorWidget: (context, url, error) => Container(
                       color: AppColors.accentLight,
                       child: const Icon(
@@ -66,12 +61,11 @@ class CategoryCard extends StatelessWidget {
                     width: 28,
                     height: 28,
                     decoration: BoxDecoration(
+                      // ignore: deprecated_member_use
                       color: Colors.white.withOpacity(0.9),
                       shape: BoxShape.circle,
                     ),
-                    child: Center(
-                      child: _categoryIcon(category.name),
-                    ),
+                    child: Center(child: _categoryIcon(category.name)),
                   ),
                 ),
               ],

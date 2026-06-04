@@ -1,12 +1,12 @@
+import 'package:craftora_app/core/constants/app_colors.dart';
+import 'package:craftora_app/core/constants/app_images.dart';
+import 'package:craftora_app/core/constants/app_strings.dart';
+import 'package:craftora_app/core/theme/app_dimensions.dart';
+import 'package:craftora_app/core/theme/app_text_theme.dart';
+import 'package:craftora_app/core/utils/responsive_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import '../../core/constants/app_colors.dart';
-import '../../core/constants/app_images.dart';
-import '../../core/constants/app_strings.dart';
-import '../../core/theme/app_dimensions.dart';
-import '../../core/theme/app_text_theme.dart';
-import '../../core/utils/responsive_utils.dart';
 
 class BannerSection extends StatefulWidget {
   const BannerSection({super.key});
@@ -108,6 +108,7 @@ class _BannerItem extends StatelessWidget {
               end: Alignment.centerLeft,
               colors: [
                 Colors.transparent,
+                // ignore: deprecated_member_use
                 Colors.black.withOpacity(0.65),
               ],
             ),

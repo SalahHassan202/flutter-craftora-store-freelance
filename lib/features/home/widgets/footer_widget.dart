@@ -1,8 +1,8 @@
+import 'package:craftora_app/core/constants/app_colors.dart';
+import 'package:craftora_app/core/constants/app_strings.dart';
+import 'package:craftora_app/core/theme/app_dimensions.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../core/constants/app_colors.dart';
-import '../../core/constants/app_strings.dart';
-import '../../core/theme/app_dimensions.dart';
 
 class FooterWidget extends StatelessWidget {
   const FooterWidget({super.key});
@@ -29,10 +29,7 @@ class FooterWidget extends StatelessWidget {
           const SizedBox(height: AppDimensions.spaceSM),
           Text(
             '© 2024 All rights reserved',
-            style: GoogleFonts.lato(
-              fontSize: 11,
-              color: AppColors.textHint,
-            ),
+            style: GoogleFonts.lato(fontSize: 11, color: AppColors.textHint),
           ),
         ],
       ),

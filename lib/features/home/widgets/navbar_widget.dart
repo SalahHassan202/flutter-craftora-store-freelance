@@ -1,8 +1,8 @@
+import 'package:craftora_app/core/constants/app_colors.dart';
+import 'package:craftora_app/core/constants/app_strings.dart';
+import 'package:craftora_app/core/theme/app_dimensions.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../core/constants/app_colors.dart';
-import '../../core/constants/app_strings.dart';
-import '../../core/theme/app_dimensions.dart';
 
 class NavbarWidget extends StatelessWidget {
   final int currentIndex;
