@@ -38,6 +38,7 @@ dependencies:
   cached_network_image: ^3.4.1
   smooth_page_indicator: ^2.0.1
   flutter_svg: ^2.3.0
+  responsive_framework: ^1.5.1
 
 dev_dependencies:
   flutter_test:
